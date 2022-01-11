@@ -1,0 +1,1012 @@
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.register-div {
+  width: 100%;
+  margin: 0px auto 0px auto;
+  height: 100vh;
+}
+
+.register-header {
+  text-align: center;
+}
+
+
+.register-content {
+  width: 80%;
+  margin: 40px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-input {
+  margin: 0px auto 20px auto !important;
+  width: 80% !important;
+}
+
+.auth-err {
+  width: 80% !important;
+}
+
+.register-date-input {
+  margin: 0px auto 20px auto !important;
+}
+
+.nav-menu {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid darkgray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 30px;
+
+}
+
+.menu-button {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.menu-header {
+  margin: 0 0 8px 0 !important;
+  text-align: center;
+  width: 100%;
+}
+
+.menu-item {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.menu-item:hover {
+  text-decoration: underline;
+}
+
+.ant-drawer-title {
+  font-size: 22px !important;
+  color: #61dafb !important;
+}
+
+.home-carousel {
+  height: 200px ;
+  width: 100%;
+}
+
+.home-img-div img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+  border-bottom: 3px solid #1890ff ;
+}
+
+.home-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.home-img-div {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.loading-div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding-top: 200px;
+  justify-content: center;
+}
+
+.card-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 5px;
+}
+
+.home-cards {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ant-card {
+  width: 90% !important;
+  margin-bottom: 20px !important;
+}
+
+.ant-card-body {
+  padding: 0 0 0 0 !important; 
+}
+
+.search-title {
+  color: white;
+}
+
+.postcode-input {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.postcode-search-box {
+  width: 60% !important;
+}
+
+.home-footer {
+  width: 100%;
+  height: 40px;
+  background-color: #43464B;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.register-btn {
+  margin: 10px auto 0px auto;
+  width: 40% !important;
+}
+
+.error-box {
+  margin-bottom: 20px;
+}
+
+/* for error messages fading */
+.fadeOut{
+  opacity:0 !important;
+  width:0 !important;
+  height:0 !important;
+  transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s !important;
+
+}
+.fadeIn{
+  opacity:1 !important;
+  
+  transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s !important;
+}
+
+.login-inputs {
+  width: 70%;
+  margin: 20px auto 0px auto;
+}
+
+.login-input {
+  margin-bottom: 20px !important;
+}
+
+.login-header {
+  margin-top: 40px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.login-err {
+  width: 70%;
+  margin: 0px auto 20px auto !important;
+}
+
+.classes-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  height: 100vh;
+}
+
+.classes {
+  height: 200px;
+  
+  width: 70%;
+  margin: 0 auto;
+}
+
+.performance {
+  height: 200px;
+  padding-top: 35px;
+}
+
+.performance-stats {
+  height: 50%;
+  text-align: center;
+}
+
+.days {
+  border-top: 2px solid #f0f0f0;
+}
+
+.upcoming-div {
+  height: 200px;
+  padding-top: 35px;
+}
+
+.dashboard {
+  height: 100vh;
+  background-color: #D3D3D3;
+}
+
+.class-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.classes-div {
+  background-color: #D3D3D3;
+}
+
+.session {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 1px solid #f3f3f3;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform .2s;
+  padding-top: 5px;
+  align-items: center;
+}
+
+.session-complete {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border: 1px solid #f3f3f3;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform .2s;
+  padding-top: 5px;
+  align-items: center;
+}
+
+.session:hover {
+  transform: scale(1.05);
+  border-color: #d9d9d9;
+}
+
+.anticon-delete {
+  margin-top: 7px;
+}
+
+.loading-classes {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.session-button {
+  border-radius: 4px !important;
+}
+
+.session-header {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.session-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 20px;
+}
+
+.session-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.header-text {
+  
+}
+
+.all-sessions-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.session-card {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px auto 10px auto;
+}
+
+.session-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.session-card-item{
+  margin-bottom: 20px;
+}
+
+.book-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.ant-modal.book-modal {
+  width: 80% !important;
+  margin: 0 auto !important;
+}
+
+.session-modal-header {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.book-header {
+  padding-top: 30px;
+  margin-left: 30px;
+}
+
+.select-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+.session-type-header {
+  margin-right: 10px;
+}
+
+.book-session-modal {
+  width: 80% !important;
+}
+
+.book-modal-header {
+  text-align: center;
+}
+
+.session-type {
+  width: 80%;
+}
+
+.session-date {
+  width: 80%;
+}
+
+.session-time{
+  width: 80%;
+}
+
+.date-div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.time-div {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.session-time-header {
+  margin-right: 10px;
+}
+
+/* .ant-picker-footer {
+  display: none !important;
+}
+
+*/
+.ant-picker-time-panel-cell-disabled {
+  display: none !important;
+} 
+
+.book-error {
+  text-align: center;
+}
+
+.session-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.ant-card-head-title {
+  padding: 0 !important;
+  padding-top: 10px !important;
+}
+
+.session-trainer-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.session-trainer {
+  margin-left: 20px;
+}
+
+.ant-avatar.ant-avatar-circle.ant-avatar-image.session-avatar {
+  margin-bottom: 30px !important;
+}
+
+.completed-div {
+  height: 200px;
+}
+
+.completed-stats {
+  height: 50%;
+  text-align: center;
+}
+
+.completed-sessions {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.tick-icon {
+  margin-bottom: 4px !important;
+}
+
+.completed-banner {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ant-alert.ant-alert-success {
+  margin-top: 10px !important;
+  width: 100% !important;
+}
+
+.session-icon {
+  margin-right: 5px !important;
+}
+
+.empty-icon {
+  margin-top: 20px !important;
+}
+
+.account-type-header {
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+
+.account-select {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account-select-button {
+  width: 60%;
+  height: 100px;
+  border: 1px solid #61dafb;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.type-error {
+  margin: 10px 0 20px 0 !important;
+}
+
+.trainer-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #D3D3D3;
+  height: 100vh;
+}
+
+.clients {
+  height: 200px;
+  padding-top: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.type-button {
+  margin: 20px auto 20px 20px;
+}
+
+.session-types {
+  height: 200px;
+  padding-top: 20px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.sessions {
+  height: 200px;
+}
+
+.trainer-session {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.session-type-box {
+  width: auto;
+  height: 40px;
+  border: 1px solid #d9d9d9 ;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  margin: 5px;
+  text-transform: capitalize;
+}
+
+.delete-type-button {
+  cursor: pointer;
+  margin-bottom: 3px;
+  margin-left: 5px;
+}
+
+.trainer-dashboard-client {
+  cursor: pointer;
+  width: 40%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.trainer-dashboard-client:hover {
+  border-bottom:  1px solid #d9d9d9;
+}
+
+.empty-session-types {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.client-icon {
+  margin-right: 10px;
+}
+
+.dashboard-buttons {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px auto 20px auto;
+}
+
+.dashboard-button {
+  width: 45% !important;
+  
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+} 
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.message-error {
+  margin-bottom: 20px !important; 
+  
+}
+
+.message-dropdown-trigger {
+  margin: 20px 0 20px 0 !important;
+}
+
+.client-dashboard-buttons {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.assign-trainer-button {
+  width: 40%;
+}
+
+.book-button {
+  width: 40%;
+}
+
+.trainer-search {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.trainer-search-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.trainer-search-button {
+  cursor: pointer;
+  width: 40%;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.empty-trainers {
+  width: 100%;
+  text-align: center;
+}
+
+.search-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.trainer-profile-name {
+  text-decoration: underline;
+}
+
+.trainer-profile-types-header {
+  text-decoration: underline;
+}
+
+.trainer-profile-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.home-page-box {
+  height: auto;
+  width: 90%;
+  margin: 20px 0 0 0;
+}
+
+.home-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.home-account-information {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 120px;
+  margin-top: 50px;
+}
+
+.account-information {
+  display: flex;
+  flex-direction: column;
+}
+
+.trainer-account-img {
+  display: none;
+}
+
+.client-account-img {
+  display: none;
+}
+#wrapper{
+  position: relative;
+  width:100%;
+  min-height:55vw;
+  overflow: hidden;
+}
+
+.layer{
+  position: absolute;
+  width:100vw;
+  min-height: 55vw;
+  overflow: hidden;
+}
+
+.layer .content-wrap{
+  position: absolute;
+  width:100vw;
+  min-height: 55vw;
+}
+
+.layer .content-body{
+  width:25%;
+  position:absolute;
+  top:50%;
+  text-align: start;
+  transform:translateY(-50%);
+  color:#fff;
+}
+
+.layer img{
+  position: absolute;
+  width:35%;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+
+.layer h1{
+  font-size:2em;
+}
+
+.bottom{
+  background:#222;
+  z-index:1;
+}
+
+.bottom .content-body{
+  right:5%;
+}
+
+.bottom h1{
+  color:#FDAB00;
+}
+
+.top{
+  background:#eee;
+  color:#222;
+  z-index:2;
+  width:50vw;
+}
+
+.top .content-body{
+  left: 5%;
+  color:#222;
+}
+
+.handle{
+  position: absolute;
+  height: 100%;
+  display: block;
+  background-color: #5cb0ff;
+  width:5px;
+  top:0;
+  left: 50%;
+  z-index:3;
+}
+
+.skewed .handle{
+  top:50%;
+  transform:rotate(30deg) translateY(-50%);
+  height: 200%;
+  transform-origin:top;
+}
+
+.skewed .top{
+  transform: skew(-30deg);
+  margin-left:-1000px;
+  width: calc(50vw + 1000px);
+}
+
+.skewed .top .content-wrap{
+  transform: skew(30deg);
+  margin-left:1000px;
+}
+
+.list-dark-el {
+  color: "white";
+  font-size: 18px;
+}
+
+.list-light-el {
+  color: #222222;
+  font-size: 18px;
+}
+
+.skewed {display: none}
+
+@media only screen and (min-width: 768px) {
+  .trainer-session {
+    width: 50%;
+  }
+
+  .home-img-div {
+    height: 300px;
+  }
+
+  .home-img-div img {
+    height: 300px;
+  }
+
+  .home-cards {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    
+  }
+
+  .home-page-box {
+    height: 335px;
+    width: 45%;
+  }
+
+  .home-account-information {
+    margin-top: 30px;
+  }
+
+  .account-information {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .account-select-button {
+    width: 40%;
+  }
+
+  .register-content {
+    width: 4 5%;
+  }
+
+  .login-inputs {
+    width: 40%;
+  }
+
+  .skewed {
+    display: inherit;
+  }
+
+  .list-dark-el{
+    font-size: 14px;
+  }
+
+  .list-light-el {
+    font-size: 14px;
+  }
+
+  .trainer-dashboard-client {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+
+  .ant-card {
+    width: 727px !important;
+  }
+
+  .dashboard-buttons {
+    width: 729px !important;
+  }
+
+  .register-btn {
+    width: 226px !important;
+  }
+
+  .trainer-account-img img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .trainer-account-information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto 10px auto;
+  }
+
+  .client-account-information {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto 10px auto;
+  }
+
+  .client-account-content {
+    width: 100%;
+    margin-right: 20px;
+  }
+
+  .trainer-account-content {
+    width: 100%;
+  }
+
+  .home-account-information {
+    width: 80%;
+    margin: 30px auto 20px auto;
+  }
+}
+
+@media screen and (min-width:1281px) {
+  .home-page-box {
+    width: 22%;
+  }
+
+  .home-img-div img {
+    height: 100vh;
+  }
+
+  .home-account-information {
+    margin-top: 40px;
+  }
+
+  .trainer-account-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+  
+  .client-account-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+  }
+}
